@@ -1,0 +1,15 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+
+development:
+  <<: *default
+  database: react-rails-test_development
+
+test:
+  <<: *default
+  database: react-rails-test_test
+
+production:
+  <<: *default
+  database: react-rails-test_production
